@@ -1,0 +1,69 @@
+\section[Chương 8]{Chương 8: Dao động điện từ}
+
+\subsection{Câu 1}
+
+Xét mạch $LC$. Trong quá trình dao động năng lượng không đổi: $W_e + W_m = \text{const}$
+
+\begin{align*}
+  {}\quad & \frac{1}{2} \frac{q^2}{C} + \frac{1}{2} LI^2 = \text{const} \\
+  \Rightarrow\quad & \frac{q}{C} \frac{dq}{dt} + LI \frac{dI}{dt} = 0 \\
+  \Rightarrow\quad & \frac{q}{C} + L\frac{dI}{dt} = 0 \\
+  \Rightarrow\quad & \frac{d^2I}{dt^2} + \frac{1}{LC} I = 0
+\end{align*}
+
+Đặt $\omega_0^2 = \frac{1}{LC}$, ta có $\frac{d^2I}{dt^2} + \omega_0^2 I = 0$
+
+\begin{equation*}
+  I = I_0 \cos\left( \omega_0 t + \varphi \right)
+\end{equation*}
+
+\subsection{Câu 2}
+
+Xét mạch $RLC$. Do tỏa nhiệt Joule -- Lenz biên độ giảm dần. 
+
+\begin{itemize}
+  \item Trong thời gian $dt$, năng lượng mạch giảm một lượng $-dW$
+  \item Nhiệt lượng tỏa ra là $RI^2dt$
+\end{itemize}
+
+\begin{align*}
+  {}\quad & -dW = RI^2dt \\
+  \Rightarrow\quad & -d\left( \frac{1}{2} \frac{q^2}{C} + \frac{1}{2} LI^2 \right) = RI^2dt \\
+  \Rightarrow\quad & \frac{q}{C} \frac{dq}{dt} + LI \frac{dI}{dt} = -RI^2 \\
+  \Rightarrow\quad & \frac{q}{C} + L\frac{dI}{dt} + RI = 0 \\ 
+  \Rightarrow\quad & \frac{1}{C} \frac{dq}{dt} + L\frac{d^2I}{dt^2} + R\frac{dI}{dt} = 0 \\
+  \Rightarrow\quad & \frac{d^2I}{dt^2} + \frac{R}{L} \frac{dI}{dt} + \frac{1}{LC} I = 0
+\end{align*}
+
+Đặt $\omega_0^2 = \frac{1}{LC}$ và $\beta = \frac{R}{2L}$. Khi đó có $\frac{d^2I}{dt^2} + 2\beta\frac{dI}{dt} + \omega_0^2 I = 0$
+
+\begin{equation*}
+  I = I_0 e^{-\beta t} \cos\left( \omega t + \varphi \right)
+\end{equation*}
+
+với $\omega = \sqrt{\omega_0^2 - \beta^2}$
+
+\subsection{Câu 3}
+
+Xét thế điện động tuần hoàn gắn với mạch $RLC$
+
+\begin{itemize}
+  \item Thế điện động là hàm tuần hoàn theo thời gian: $E = E_0 \sin \Omega t$
+  \item Trong thời gian $dt$, nguồn cung cấp năng lượng $EIdt$
+  \item Năng lượng này là phần tăng năng lượng điện từ của mạch cùng với nhiệt lượng Joule -- Lenz
+\end{itemize}
+
+\begin{align*}
+  {}\quad & EIdt = d\left( \frac{1}{2}\frac{q^2}{C} + \frac{1}{2} LI^2 \right) + RI^2dt \\
+  \Rightarrow\quad & E_0\sin\Omega t \cdot I = \frac{q}{C} \frac{dq}{dt} + LI\frac{dI}{dt} + RI^2 \\
+  \Rightarrow\quad & E_0\sin\Omega t = \frac{q}{C} + L\frac{dI}{dt} + RI \\
+  \Rightarrow\quad & \frac{d^2I}{dt^2} + \frac{R}{L} \frac{dI}{dt} + \frac{1}{LC} I = \frac{E_0 \Omega}{L} \cos \Omega t \\
+\end{align*}
+
+Đặt $\omega_0^2 = \frac{1}{LC}$ và $\beta = \frac{R}{2L}$. Khi đó $\frac{d^2I}{dt^2} + 2\beta\frac{dI}{dt} + \omega_0^2 I = \frac{E_0 \Omega}{L} \cos \Omega t$
+
+\begin{equation*}
+  I = I_0 e^{-\beta t} \cos (\omega t + \varphi) + I_0 \cos \left( \Omega t + \Phi \right)
+\end{equation*}
+
+với $I_0 = \frac{E_0}{\sqrt{R^2 + \left( \Omega L + \frac{1}{\Omega C} \right)^2}}$

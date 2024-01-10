@@ -1,0 +1,120 @@
+% First argument to \section is the title that will go in the table of contents. Second argument is the title that will be printed on the page.
+\section[Chương 1]{Chương 1: Điện trường}
+
+\subsection{Câu 1}
+
+\begin{itemize}
+  \item Điện trường là loại môi trường đặc biệt được tạo ra xung quanh các hạt mang điện tích, có tính chất gây lực tác dụng lên các điện tích đặt trong nó
+  \item Vecto cường độ điện trường tại 1 điểm là đại lượng có giá trị bằng lực tác dụng của điện trường lên một đơn vị điện tích dương tại điểm đó
+  \begin{itemize}
+    \item Vecto cddt gây bởi 1 điện tích điểm: $\vec{E} = \frac{\vec{F}}{q_0} = \frac{q}{4\pi\epsilon_0\epsilon r^3} \vec{r}$
+    \item Vecto cddt gây bởi 1 hệ điện tích điểm: $\vec{E} = \frac{\vec{F}}{q_0} = \frac{\sum\limits \vec{F}_i}{q_0} = \sum\limits \frac{\vec{F}_i}{q_0} = \sum\limits \vec{E}_i \Rightarrow$  Nguyên lý chồng chất điện trường
+    \item Vecto cddt gây bởi 1 vật mang điện: Chia nhỏ vật thành các phần nhở chứa điện tích $dq$. Coi vật như một hệ vô số điện tích điểm: $\vec{E} = \int d\vec{E} = \int \frac{dq}{4\pi\epsilon_0\epsilon r^2} \frac{\vec{r}}{r}$
+  \end{itemize}
+\end{itemize}
+
+\subsection{Câu 2}
+
+\begin{itemize}
+  \item Đường cảm ứng điện là đường cong mà tiếp tuyến tại mỗi điểm trùng với phương của vecto cảm ứng điện tại điểm đó, chiều của đường cảm ứng điện là chiều của $\vec{D}$.
+  \item ĐIểm khác nhau: Đường sức điện trường biểu diễn cho $\vec{E}$, đường cảm ứng điện biểu diễn cho $\vec{D} \Rightarrow$ Đường cảm ứng điện đi qua mặt phân cách các môi trường là đường liên tục
+  \item Thông lượng cảm ứng qua diện tích $S$:
+  \begin{itemize}
+    \item Giả sử diện tích $S$ trong 1 điện trường $\vec{D}$. Chia nhỏ $S$ thành các phần $dS$ sao cho $\vec{D}$ tại mỗi điểm trên $dS$ là như nhau
+    \item $d\Phi = \vec{D}d\vec{S} = DdS\cos\alpha = DdS_n \Rightarrow \Phi = \int_S d\Phi = \int_S \vec{D}d\vec{S}$
+  \end{itemize}
+  \item Góc khối $d\Omega = \frac{dS\cos\alpha}{r^2}$, điện thông qua 1 mặt $d\Phi = \vec{D}d\vec{S} = \frac{q}{4\pi r^3} \vec{r}d\vec{S} = \frac{q}{4\pi} \frac{dS\cos\alpha}{r^2} = \frac{q}{4\pi} d\Omega$
+  \item Điện thông qua 1 mặt bao quanh $q$: $\Phi = \oint_S d\Phi = q$
+\end{itemize}
+
+\subsection{Câu 3}
+
+\begin{itemize}
+  \item Lưỡng cực điện là 1 hệ 2 điện tích điểm bằng nhau về trị số nhưng trái dấu, cách nhau 1 khoảng rất nhỏ so với khoảng cách tới các điểm ta xét
+  \item Momen lưỡng cực điện $\vec{p}_e = q\vec{l}$ 
+  \item Ý nghĩa: Biết được $\vec{p}_e$ có thể biết được $\vec{E}$ do lưỡng cực điện gây ra. Vậy ta nói $\vec{p}_e$ đặc trưng cho tính chất điện của lưỡng cực
+  \item Xác định $E$ tại điểm $M$ nằm trên trung trực và cách xa 2 điểm 1 khoảng $r$ (tự làm)
+\end{itemize}
+
+\begin{equation*}
+  \vec{E}_m = - \frac{\vec{p}_e}{4\pi\epsilon_0\epsilon r^3}
+\end{equation*}
+
+\subsection{Câu 4}\label{def:o-g}
+
+\begin{itemize}
+  \item Định lý O-G trong điện trường: Điện thông gửi qua một mặt kín có giá trị bằng tổng đại số các điện tích trong mặt kín đó.
+  \item Dạng tích phân: $$\Phi = \oint_S \vec{D}d\vec{S} = \sum\limits q_i$$
+  \item Dạng vi phân: $$\text{div}\,\vec{D} = \rho$$
+  \item Áp dụng với mặt phẳng vô hạn mật độ $\sigma$:
+  \begin{itemize}
+    \item Xét hình trụ với đáy $\Delta S$, song song mp. $\vec{D}$ vuông góc với mp đó
+    \item Tính ra được $D = \frac{\sigma}{2}$
+  \end{itemize}
+  \item Cddt trong tụ phẳng: $E = \frac{\sigma}{\epsilon_0\epsilon} = \frac{q}{\epsilon_0\epsilon S}$
+\end{itemize}
+
+\subsection{Câu 5}
+
+\begin{itemize}
+  \item O-G như \hyperref[def:o-g]{trên}
+  \item Áp dụng với mặt trụ dài vô hạn, bán kính R, mật độ $\sigma$
+  \begin{itemize}
+    \item Xét hình trụ ngoài với bán kính $r > R$ (tự làm)
+    \item Tính được $E = \frac{\lambda}{2\pi r}$
+  \end{itemize}
+\end{itemize}
+
+\subsection{Câu 6}
+
+\begin{itemize}
+  \item O-G như \hyperref[def:o-g]{trên}
+  \item Áp dụng với mặt cầu bán kính $R$ tại điểm nằm ngoài cách $r > R$:
+  \begin{itemize}
+    \item Xét một mặt cầu ngoài với bán kính $r > R$ (tự làm)
+    \item Tính được $E = \frac{q}{4\pi\epsilon_0\epsilon r^2}$
+  \end{itemize}
+\end{itemize}
+
+\subsection{Câu 7}
+
+\begin{itemize}
+  \item Tính công của lực tĩnh điện trong chuyển dời:
+  \begin{itemize}
+    \item Xét công của lực điện trên một chuyển dời nhỏ $ds$:
+    \begin{equation*}
+      dA = \vec{F}d\vec{s} = q_0 \frac{q}{4\pi\epsilon_0\epsilon r^3} \vec{r}d\vec{s} = \dots = \frac{q_0qdr}{4\pi\epsilon_0\epsilon r^2}
+    \end{equation*}
+    \item Công của lực trong chuyển dời từ $M$ đến $N$:
+    \begin{equation*}
+      A = \int_{M}^{N} dA = \int_{r_M}^{r_N} \frac{q_0q}{4\pi\epsilon_0\epsilon} \frac{dr}{r^2} = \frac{q_0q}{4\pi\epsilon_0\epsilon r_M} - \frac{q_0q}{4\pi\epsilon_0\epsilon r_N}
+    \end{equation*}
+  \end{itemize}
+  \item Trường tĩnh điện gọi là trường thế vì công của lực điện trong sự chuyển dời một điện tích điểm $q_0$ trong điện trường không phụ thuộc vào dạng của đường cong dịch chuyển mà chỉ phụ thuộc vào điểm đầu và cuối của chuyển dời
+  \item Lưu số vector cddt dọc theo 1 đường cong kín bằng 0
+  \begin{equation*}
+    \oint \vec{E}d\vec{s} = 0
+  \end{equation*}
+\end{itemize}
+
+\subsection{Câu 8}
+
+\begin{itemize}
+  \item Thế năng của điện trường tại một điểm là đại lượng đặc trưng cho điện trường tại điểm đang xét.
+  \item Thế năng điện trường có trị số bằng giá trị của thế năng của một đơn vị điện tích dương tại điểm đang xét 
+  \begin{equation*}
+    V = \frac{W}{q_0}
+  \end{equation*}
+  \item Điện thế tại một điểm trong điện trường (quy ước $W_\infty = 0$): 
+  \begin{equation*}
+    V = \frac{W}{q_0} = \frac{q}{4\pi\epsilon_0\epsilon r}
+  \end{equation*}
+  \item Điện thế trong một hệ điện tích điểm:
+  \begin{equation*}
+    V = \sum V_i = \sum \frac{q_i}{4\pi\epsilon_0\epsilon r_i}
+  \end{equation*}
+  \item Điện thế trong một điện trường bất kỳ:
+  \begin{equation*}
+    V_M = \frac{W_M}{q_0} = \int_{M}^{\infty} \vec{E}d\vec{s}
+  \end{equation*}
+\end{itemize}
