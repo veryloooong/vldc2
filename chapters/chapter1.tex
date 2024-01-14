@@ -1,7 +1,7 @@
 % First argument to \section is the title that will go in the table of contents. Second argument is the title that will be printed on the page.
 \section[Chương 1]{Chương 1: Điện trường}
 
-\subsection{Câu 1}
+\subsection[Câu 1]{Câu 1: Trình bày khái niệm điện trường. Nêu định nghĩa và ý nghĩa của vector cường độ điện trường. Thiết lập công thức xác định vectơ cường độ điện trường gây bởi điện tích điểm, hệ điện tích điểm và của một vật mang điện.}
 
 \begin{itemize}
   \item Điện trường là loại môi trường đặc biệt được tạo ra xung quanh các hạt mang điện tích, có tính chất gây lực tác dụng lên các điện tích đặt trong nó
@@ -13,11 +13,15 @@
   \end{itemize}
 \end{itemize}
 
-\subsection{Câu 2}
+\subsection[Câu 2]{Câu 2: Định nghĩa đường cảm ứng điện. Cho biết sự khác nhau cơ bản giữa phổ đường sức điện trường và phổ đường cảm ứng điện. Viết công thức xác định thông lượng cảm ứng điện qua diện tích $S$. Tính điện thông qua một mặt cầu bao quanh một điện tích điểm.} 
 
 \begin{itemize}
   \item Đường cảm ứng điện là đường cong mà tiếp tuyến tại mỗi điểm trùng với phương của vecto cảm ứng điện tại điểm đó, chiều của đường cảm ứng điện là chiều của $\vec{D}$.
   \item ĐIểm khác nhau: Đường sức điện trường biểu diễn cho $\vec{E}$, đường cảm ứng điện biểu diễn cho $\vec{D} \Rightarrow$ Đường cảm ứng điện đi qua mặt phân cách các môi trường là đường liên tục
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{ch01.png}
+\end{figure}
   \item Thông lượng cảm ứng qua diện tích $S$:
   \begin{itemize}
     \item Giả sử diện tích $S$ trong 1 điện trường $\vec{D}$. Chia nhỏ $S$ thành các phần $dS$ sao cho $\vec{D}$ tại mỗi điểm trên $dS$ là như nhau
@@ -27,7 +31,7 @@
   \item Điện thông qua 1 mặt bao quanh $q$: $\Phi = \oint_S d\Phi = q$
 \end{itemize}
 
-\subsection{Câu 3}
+\subsection[Câu 3]{Câu 3: Nêu định nghĩa và ý nghĩa của mômen lưỡng cực điện. Xác định vector cường độ điện trường gây bởi lưỡng cực điện tại điểm $M$ nằm trên đường trung trực và cách tâm $O$ của lưỡng cực một khoảng $r$ khá lớn so với khoảng cách giữa hai điện tích.}
 
 \begin{itemize}
   \item Lưỡng cực điện là 1 hệ 2 điện tích điểm bằng nhau về trị số nhưng trái dấu, cách nhau 1 khoảng rất nhỏ so với khoảng cách tới các điểm ta xét
@@ -40,7 +44,7 @@
   \vec{E}_m = - \frac{\vec{p}_e}{4\pi\epsilon_0\epsilon r^3}
 \end{equation*}
 
-\subsection{Câu 4}\label{def:o-g}
+\subsection[Câu 4]{Câu 4: Phát biểu, viết biểu thức và nêu ý nghĩa của định lý O-G trong điện trường. Áp dụng định lý O-G xác định cường độ điện trường gây bởi mặt phẳng vô hạn tích điện đều với mật độ điện mặt $\sigma$. Từ kết quả trên suy ra cường độ điện trường trong tụ điện phẳng tích điện.}\label{def:o-g}
 
 \begin{itemize}
   \item Định lý O-G trong điện trường: Điện thông gửi qua một mặt kín có giá trị bằng tổng đại số các điện tích trong mặt kín đó.
@@ -54,18 +58,18 @@
   \item Cddt trong tụ phẳng: $E = \frac{\sigma}{\epsilon_0\epsilon} = \frac{q}{\epsilon_0\epsilon S}$
 \end{itemize}
 
-\subsection{Câu 5}
+\subsection[Câu 5]{Câu 5: Phát biểu và viết biểu thức của định lý O-G đối với điện trường (dạng tích phân và dạng vi phân). Áp dụng định lý tính cường độ điện trường gây bởi mặt trụ dài vô hạn, bán kính tiết diện ngang $R$, tích điện đều với mật độ điện mặt $\sigma$, tại điểm $M$ cách trục của trụ một khoảng $r>R$.}
 
 \begin{itemize}
   \item O-G như \hyperref[def:o-g]{trên}
   \item Áp dụng với mặt trụ dài vô hạn, bán kính R, mật độ $\sigma$
   \begin{itemize}
     \item Xét hình trụ ngoài với bán kính $r > R$ (tự làm)
-    \item Tính được $E = \frac{\lambda}{2\pi r}$
+    \item Tính được $E = \frac{\lambda}{2\pi\epsilon_0\epsilon r}$
   \end{itemize}
 \end{itemize}
 
-\subsection{Câu 6}
+\subsection[Câu 6]{Câu 6: Phát biểu và viết biểu thức của định lý O-G đối với điện trường (dạng tích phân và dạng vi phân). Áp dụng tính cường độ điện trường gây bởi mặt cầu tích điện $q$, bán kính $R$ tại điểm nằm ngoài cách tâm mặt cầu một khoảng $r > R$.}
 
 \begin{itemize}
   \item O-G như \hyperref[def:o-g]{trên}
@@ -76,7 +80,7 @@
   \end{itemize}
 \end{itemize}
 
-\subsection{Câu 7}
+\subsection[Câu 7]{Câu 7: Tính công của lực tĩnh điện khi dịch chuyển điện tích điểm $q_0$ trong điện trường của điện tích điểm $q$. Tại sao nói trường tĩnh điện là trường thế?}
 
 \begin{itemize}
   \item Tính công của lực tĩnh điện trong chuyển dời:
@@ -97,14 +101,17 @@
   \end{equation*}
 \end{itemize}
 
-\subsection{Câu 8}
+\subsection[Câu 8]{Câu 8: Định nghĩa và nêu ý nghĩa của điện thế. Dẫn ra công thức tính điện thế tại một điểm trong điện trường, của một hệ các điện tích điểm phân bố rời rạc và tại một điểm của điện trường bất kỳ.}
+
+Thế năng của điện trường tại một điểm là đại lượng đặc trưng cho điện trường tại điểm đang xét.
+
+Thế năng điện trường có trị số bằng giá trị của thế năng của một đơn vị điện tích dương tại điểm đang xét 
+
+\begin{equation*}
+V = \frac{W}{q_0}
+\end{equation*}
 
 \begin{itemize}
-  \item Thế năng của điện trường tại một điểm là đại lượng đặc trưng cho điện trường tại điểm đang xét.
-  \item Thế năng điện trường có trị số bằng giá trị của thế năng của một đơn vị điện tích dương tại điểm đang xét 
-  \begin{equation*}
-    V = \frac{W}{q_0}
-  \end{equation*}
   \item Điện thế tại một điểm trong điện trường (quy ước $W_\infty = 0$): 
   \begin{equation*}
     V = \frac{W}{q_0} = \frac{q}{4\pi\epsilon_0\epsilon r}
