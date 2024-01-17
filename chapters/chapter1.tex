@@ -8,7 +8,7 @@
   \item Vecto cường độ điện trường tại 1 điểm là đại lượng có giá trị bằng lực tác dụng của điện trường lên một đơn vị điện tích dương tại điểm đó
   \begin{itemize}
     \item Vecto cddt gây bởi 1 điện tích điểm: $\vec{E} = \frac{\vec{F}}{q_0} = \frac{q}{4\pi\epsilon_0\epsilon r^3} \vec{r}$
-    \item Vecto cddt gây bởi 1 hệ điện tích điểm: $\vec{E} = \frac{\vec{F}}{q_0} = \frac{\sum\limits \vec{F}_i}{q_0} = \sum\limits \frac{\vec{F}_i}{q_0} = \sum\limits \vec{E}_i \Rightarrow$  Nguyên lý chồng chất điện trường
+    \item Vecto cddt gây bởi 1 hệ điện tích điểm: $\vec{E} = \frac{\vec{F}}{q_0} = \frac{\sum\limits \vec{F}_i}{q_0} = \sum\limits \frac{\vec{F}_i}{q_0} = \sum\limits \vec{E}_i \Rightarrow$ Nguyên lý chồng chất điện trường
     \item Vecto cddt gây bởi 1 vật mang điện: Chia nhỏ vật thành các phần nhở chứa điện tích $dq$. Coi vật như một hệ vô số điện tích điểm: $\vec{E} = \int d\vec{E} = \int \frac{dq}{4\pi\epsilon_0\epsilon r^2} \frac{\vec{r}}{r}$
   \end{itemize}
 \end{itemize}
@@ -65,7 +65,7 @@
   \item Áp dụng với mặt trụ dài vô hạn, bán kính R, mật độ $\sigma$
   \begin{itemize}
     \item Xét hình trụ ngoài với bán kính $r > R$ (tự làm)
-    \item Tính được $E = \frac{\lambda}{2\pi\epsilon_0\epsilon r}$
+    \item Tính được $E = \frac{\sigma R}{\epsilon_0 \epsilon r} = \frac{\lambda}{2\pi\epsilon_0\epsilon r}$
   \end{itemize}
 \end{itemize}
 
@@ -101,15 +101,17 @@
   \end{equation*}
 \end{itemize}
 
-\subsection[Câu 8]{Câu 8: Định nghĩa và nêu ý nghĩa của điện thế. Dẫn ra công thức tính điện thế tại một điểm trong điện trường, của một hệ các điện tích điểm phân bố rời rạc và tại một điểm của điện trường bất kỳ.}
+\subsection[Câu 8]{Câu 8: Định nghĩa và nêu ý nghĩa của điện thế. Dẫn ra công thức tính điện thế tại một điểm trong điện trường, của một hệ các điện tích điểm phân bố rời rạc và tại một điểm của điện trường bất kỳ. Thiết lập công thức liên hệ giữa cường độ điện trường và điện thế.}
 
-Thế năng của điện trường tại một điểm là đại lượng đặc trưng cho điện trường tại điểm đang xét.
+Điện thế của điện trường tại một điểm là đại lượng đặc trưng cho điện trường tại điểm đang xét.
 
-Thế năng điện trường có trị số bằng giá trị của thế năng của một đơn vị điện tích dương tại điểm đang xét 
+Điện thế có trị số bằng giá trị của thế năng của một đơn vị điện tích dương tại điểm đang xét 
 
 \begin{equation*}
 V = \frac{W}{q_0}
 \end{equation*}
+
+Ý nghĩa của điện thế: Điện thế tại một điểm trong điện trường là một đại lượng về trị số bằng công của lực tĩnh điện trong sự dịch chuyển một đơn vị điện tích dương từ điểm đó ra xa vô cùng.
 
 \begin{itemize}
   \item Điện thế tại một điểm trong điện trường (quy ước $W_\infty = 0$): 
@@ -125,3 +127,27 @@ V = \frac{W}{q_0}
     V_M = \frac{W_M}{q_0} = \int_{M}^{\infty} \vec{E}d\vec{s}
   \end{equation*}
 \end{itemize}
+
+Liên hệ giữa cường độ điện trường và điện thế:
+
+\begin{itemize}
+  \item Xét công $dA$ trong chuyển dời nhỏ $ds$:
+  \begin{equation}\tag{$1$}
+    dA = q_0 \vec{E}d\vec{s}
+  \end{equation}
+  \item Đồng thời có
+  \begin{equation}\tag{$2$}
+    dA = q_0 (V - (V + dV)) = -q_0dV
+  \end{equation}
+  \item Từ $(1), (2)$ có 
+  \begin{equation*}
+    dV = -\vec{E}d\vec{s}
+  \end{equation*}
+\end{itemize}
+
+Các công thức khác biến đổi ra được:
+
+\begin{gather*}
+  E_s = -\frac{dV}{ds} \\
+  \vec{E} = -\text{grad}V
+\end{gather*}

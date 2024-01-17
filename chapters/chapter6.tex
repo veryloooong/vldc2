@@ -1,2 +1,95 @@
 \section[Chương 6]{Chương 6: Vật liệu từ}
 
+\subsection[Câu 1]{Câu 1: 
+\begin{enumerate}
+  \item Thế nào là chất nghịch từ, thuận từ, sắt từ?
+  \item Trình bày về vecto từ độ $\vec{J}$.
+\end{enumerate}
+}
+
+\subsubsection{Chất nghịch từ, thuận từ, sắt từ}
+
+Mọi chất đặt trong từ trường đều bị từ hóa. Khi đó chúng trở thành mang từ tính và sinh ra một từ trường phụ $\vec{B}'$. Từ trường tổng hợp $\vec{B}$ trong chất bị từ hóa là 
+
+\begin{equation*}
+  \vec{B} = \vec{B}_0 + \vec{B}'
+\end{equation*}
+
+\begin{itemize}
+  \item Chất nghịch từ: $\vec{B}'$ ngược chiều $\vec{B}_0 \Rightarrow |\vec{B}| < |\vec{B}_0|$ 
+  \item Chất thuận từ: $\vec{B}'$ thuận chiều $\vec{B}_0 \Rightarrow |\vec{B}| > |\vec{B}_0|$
+  \item Chất sắt từ: $\vec{B}'$ thuận chiều $\vec{B}_0 \Rightarrow |\vec{B}| \gg |\vec{B}_0|$
+\end{itemize}
+
+\subsubsection{Từ độ $\vec{J}$}
+
+Vector từ độ là momen từ của một đơn vị thể tích của khối vật liệu từ.
+
+Gọi $\sum \vec{P}_{mi}$ là tổng các momen từ nguyên tử có trong một thể tích $\Delta V$ của vật liệu. Nếu khối vật liệu bị từ hóa đồng đều thì vector từ độ $\vec{J}$ là 
+
+\begin{equation*}
+  \vec{J} = \frac{\sum \vec{P}_{mi}}{\Delta V}
+\end{equation*}
+
+$J = |\vec{J}|$ là từ độ của vật liệu từ.
+
+Thực nghiệm cho thấy $\vec{J}$ tỉ lệ thuận với từ trường ngoài $\vec{B}_0$.
+
+\begin{equation*}
+  \begin{cases}
+    \vec{J} = \frac{\chi_m}{\mu_0} \vec{B}_0 \\
+    \vec{B}_0 = \mu_0 \vec{H}
+  \end{cases}
+  \Rightarrow \vec{J} = \chi_m \vec{H}
+\end{equation*}
+
+$\chi_m$ là hệ số tỷ lệ phụ thuộc vào bản chất của vật liệu từ và gọi là độ từ hóa của vật liệu từ.
+
+\subsection[Câu 2]{Câu 2: Xây dựng công thức tính cảm ứng từ tổng hợp trong chất thuận từ đồng chất và đẳng hướng.}
+
+\begin{itemize}
+  \item Xét khối thuận từ đồng nhất hình trụ dài vô hạn, tiết diện thẳng $S$
+  \item Trụ đặt trong từ trường đều $\vec{B}_0$ có phương song song với đường sinh
+  \item Giả sử dưới tác dụng của từ trường ngoài, các momen nguyên tử $\vec{P}_m$ nằm dọc theo hướng $\vec{B}_0$
+\end{itemize}
+
+Xét các dòng điện nguyên tử trong 1 tiết diện thẳng của trụ:
+
+\begin{itemize}
+  \item Bên trong tiết diện thì các dòng điện nguyên tử ngược chiều và triệt tiêu lẫn nhau
+  \item Chỉ có các dòng điện nằm dọc trên chu vi của tiết diện là cùng chiều và tạo 1 dòng điện tròn chạy quanh chu vi của tiết diện
+\end{itemize}
+
+Vậy nếu xét cả hình trụ thì tất cả các dòng điện nguyên tử trong các tiết diện thẳng sẽ tương đương với 1 dòng điện duy nhất chạy quanh mặt ngoài của trụ như 1 ống dây điện thẳng dài vô hạn.
+
+\begin{itemize}
+  \item $n_0$ là số dòng điện tròn trên 1m hình trụ
+  \item $i$ là cường độ dòng điện
+  \item Cảm ứng phụ sinh ra là $B' = \mu_0 n_0 i$
+\end{itemize}
+
+Mặt khác có
+
+\begin{gather*}
+  J = \frac{n_0 i S}{S} = n_0 i \\
+  \Rightarrow B' = \mu_0 J
+\end{gather*}
+
+Vì $\vec{B}'$ thuận chiều $\vec{J} \Rightarrow \vec{B}' = \mu_0 \vec{J}$
+
+Từ trường tổng hợp là 
+
+\begin{equation*}
+  \begin{cases}
+    \vec{B} = \vec{B}_0 + \mu_0 \vec{J} \\
+    \vec{J} = \frac{\chi_m}{\mu_0} \vec{B}_0
+  \end{cases}
+  \Rightarrow \vec{B} = (1 + \chi_m) \vec{B}_0 = \mu \vec{B}_0 = \mu_0 \mu \vec{H}
+\end{equation*}
+
+Lý luận trên cũng đúng với chất nghịch từ.
+
+\begin{itemize}
+  \item Thuận từ: $\chi_m > 0 \Rightarrow \mu > 1$
+  \item Nghịch từ: $\chi_m < 0 \Rightarrow \mu < 1$
+\end{itemize}
